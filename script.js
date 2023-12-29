@@ -22,7 +22,7 @@ const updateClock = () => {
 		let minutes = currentTime.getMinutes();
 		let seconds = currentTime.getSeconds();
 		
-		if(hour >= 5 && hour < 12) {
+		if(hour >= 1 && hour < 12) {
 			greetings = `${morningMsg}${myName1} & ${myName2}`
 			// ampm = "AM"
 		} else if(hour >= 12 && hour < 18) {

@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./images/EC2.png">
     <script src="index.js"></script>
-    <title>ExprezzCard</title>
+    <title>ExprezcardClock</title>
 </head>
 <body>
     <!-- LOGO IMAGE -->
 <div class="image-container">
-    <img id="img1" src="/icons/ghost.png" alt="logo" width="120"
-    onmouseover="this.src='/images/rheyan.jpg'";
-    onmouseout="this.src='/icons/ghost.png'">
-    <script>rotateAnimation("img1", 20);</script> 
+    <img id="img1" src="./icons/ghost.png" alt="logo" width="80">
+    <script>rotateAnimation("img1", 30);</script> 
 </div>
 <!-- LOGO NAME HEADER -->
 <div class="header1">
@@ -40,20 +38,36 @@
         <span id="ampm"></span>
     </div> -->
 </div>
-<div class="header">
 <!-- SUB HEADING NAME -->
+<div class="header">
+    <div class="animate animate"></div>
+    <div class="animate animate2"></div>
+    <div class="animate animate3"></div>
+    <div class="animate animate4"></div>
     <h2>Where Do You Want To Go Today</h2>
     <p>You should be working and learning</p>
 </div>
+
 <!-- LINK BUTTONS TO TRANSFER FROM DIFFERENT SITES -->
-<div class="container-btn">
+<div class="socialsContainer">
+    <span class="btn1" onclick="window.open('https://www.facebook.com','_blank')"><img src="./icons/facebook.png" alt="fb" width="30"></span>
+    <span class="btn2" onclick="window.open('https://www.google.com','_blank')"><img src="./icons/google.png" alt="google" width="30"></span>
+    <span class="btn3" onclick="window.open('https://www.gmail.com','_blank')"><img src="./icons/mail.png" alt="mail" width="30"></span>
+    <span class="btn4" onclick="window.open('https://www.youtube.com','_blank')"><img src="./icons/youtube.png" alt="youtube" width="30"></span>
+    <span class="btn5" onclick="window.open('https://www.github.com','_blank')"><img src="./icons/github.png" alt="github" width="30"></span>
+    <span class="btn5" onclick="window.open('https://chat.openai.com/','_blank')"><img src="./icons/GPT.png" alt="github" width="30"></span>
+    <span class="btn5" onclick="window.open('https://www.instagram.com','_blank')"><img src="./icons/instagram .png" alt="github" width="30"></span>
+</div>
+
+
+<!-- <div class="container-btn">
     <button class="btn1" onclick="window.open('https://www.facebook.com','_blank')">Facebook</button>
     <button class="btn2" onclick="window.open('https://www.google.com','_blank')">Google</button>
     <button class="btn3" onclick="window.open('https://www.gmail.com','_blank')">Gmail</button>
     <button class="btn4" onclick="window.open('https://www.youtube.com','_blank')">Youtube</button>
     <button class="btn5" onclick="window.open('https://www.github.com','_blank')">Github</button>
     
-</div>
+</div> -->
 <!-- FOOTER DEVELOPER NAME AND YEAR CREATED -->
 <footer>
 <p class="footer1"> RYU | FullStack Developer/Programmer</p>

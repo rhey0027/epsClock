@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #000; */
     flex-direction: column;
     margin: 15px auto;
     font-family: "OCR-A BT", sans-serif;
@@ -38,7 +37,6 @@ body {
     font-family: "Tempus Sans ITC", sans-serif;
 } 
 .header {
-    /* background-color: #ec7950; */
     text-align: center;
 } 
 .header h2 {
@@ -52,7 +50,7 @@ body {
     color: #ff0000;
 }
 span {
-    color: blue;
+    color: #0ff71b;
 }
 /* CLOCK  */
 .clock {
@@ -64,7 +62,8 @@ span {
     position: relative;
 }
 .clock span {
-    background: whitesmoke;
+    /* background: whitesmoke; */
+    background: #b421e0;
     height: 80px;
     width: 120px;
     display: flex;
@@ -77,45 +76,43 @@ span {
 .clock .text {
     font-size: 12px;
     text-transform: uppercase;
-    background-color: darkgreen;
-    color: darkorange;
+    background-color: #e7d805;
+    color: #000;
     height: 20px;
     opacity: 0.9;
     letter-spacing: 3px;
     font: bolder;
 }
-#ampm {
+/* #ampm {
     font-size: 18px;
     height: 30px;
     width: 40px;
     position: absolute;
     background: blue;
     color: greenyellow;
-}
+} */
 #seconds {
-    color: red;
+    color: #09f3f3;
 }
 /* LINK BUTTONS */
-.container-btn {
-    display: relative;
-    padding-top: 20px;
-    margin-bottom: 20px;
+.socialsContainer {
+    display: flex;
+    padding-top: 30px;
+    margin-bottom: 5px;
 }
-.container-btn button {
-    display: relative;
-    justify-content: center;
+.socialsContainer span {
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
-    margin-left: 5px;
-    border: none;
     border-radius: 3px;
-    padding: 3px 15px;
+    padding: 3px 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.container-btn button:hover {
-    opacity: 0.5;
-    transition: 0.3s;
+.socialsContainer span:hover {
+    transform: translateY(-5px);
 }
-.btn1 {
+/* .btn1 {
     background: #4242f1;
     color: #fff;
 }
@@ -133,6 +130,55 @@ span {
 .btn3 {
     background: green;
     color: #fff;
+} */
+/* WORK PARA ANIMATION */
+.animate {
+    content: url(./images/yana.png);
+    position: absolute;
+    bottom: 200px;
+    left: -400px;
+    width: 80px;
+    animation: animate 9s linear infinite;
+}
+@keyframes animate {
+    0% {left: -400px;}
+    100% {left: 100%;}
+}
+.animate2 {
+    content: url(./images/kuya.png);
+    position: absolute;
+    bottom: 160px;
+    left: -400px;
+    width: 80px;
+    animation: animate2 10s linear infinite;
+}
+@keyframes animate2 {
+    0% {left: -400px;}
+    100% {left: 100%;}
+}
+.animate3 {
+    content: url(./images/mommy.png);
+    position: absolute;
+    bottom: 190px;
+    left: -400px;
+    width: 80px;
+    animation: animate2 11s linear infinite;
+}
+@keyframes animate3 {
+    0% {left: -400px;}
+    100% {left: 100%;}
+}
+.animate4 {
+    content: url(./images/me.png);
+    position: absolute;
+    bottom: 150px;
+    left: -400px;
+    width: 80px;
+    animation: animate2 12s linear infinite;
+}
+@keyframes animate4 {
+    0% {left: -400px;}
+    100% {left: 100%;}
 }
 
 /* FOOTER */
@@ -167,7 +213,7 @@ footer {
 /* RESPONSIVENESS */
 @media only screen and (max-width:576px) {
     img {
-        margin-top: 5px;
+        margin-top: 2px;
     }
     .header1 h2 {
         font-size: 22px;
@@ -186,7 +232,4 @@ footer {
      .container-btn button {
         padding: 6px 30px;
      }
-        /* body {
-            overflow: scroll;
-     } */
 }
